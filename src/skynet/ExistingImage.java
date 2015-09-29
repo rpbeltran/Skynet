@@ -18,6 +18,13 @@ public class ExistingImage {
 		height = buffered.getHeight();
 	}
 	
+	public ExistingImage(BufferedImage image){
+		//Does nothing, in hindsight
+		buffered = image;
+		width  = buffered.getWidth();
+		height = buffered.getHeight();
+	}
+	
 	protected int[] getRGBat(int x, int y){
 		//Some bitwise math to appease Java's hunger
 		int dec = buffered.getRGB(x, y);

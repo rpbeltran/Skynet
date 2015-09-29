@@ -25,6 +25,15 @@ public class NewImage extends BufferedImage {
 		    }
 		}
 	}
+	public NewImage(int w, int h) {
+		//Some Bitwise math to quench Java's thirst 
+		super(w,h,BufferedImage.TYPE_INT_RGB);
+		
+	}
+	
+	public void setAt(int x, int y, int[] rgb){
+		this.setRGB(x, y,(rgb[0]<<16)|(rgb[1]<<8)|rgb[2]);
+	}
 	
 	public void saveTo(String filePathNoExtension){
 		//For consistency art the meaning of life
