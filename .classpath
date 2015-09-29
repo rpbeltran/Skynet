@@ -2,10 +2,18 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+<<<<<<< HEAD
 	<classpathentry kind="lib" path="C:/Users/micha_000/Desktop/SkyNet/Skynet/twitter4j-async-4.0.4.jar"/>
 	<classpathentry kind="lib" path="C:/Users/micha_000/Desktop/SkyNet/Skynet/twitter4j-core-4.0.4.jar"/>
 	<classpathentry kind="lib" path="C:/Users/micha_000/Desktop/SkyNet/Skynet/twitter4j-examples-4.0.4.jar"/>
 	<classpathentry kind="lib" path="C:/Users/micha_000/Desktop/SkyNet/Skynet/twitter4j-media-support-4.0.4.jar"/>
 	<classpathentry kind="lib" path="C:/Users/micha_000/Desktop/SkyNet/Skynet/twitter4j-stream-4.0.4.jar"/>
+=======
+	<classpathentry kind="lib" path="JMyron.jar"/>
+	<classpathentry kind="lib" path="/Users/ryanbeltran/Documents/Programming/Java/workspace/Skynet/Skynet/webcam-capture-0.3.10.jar"/>
+	<classpathentry kind="lib" path="bridj-0.6.2.jar"/>
+	<classpathentry kind="lib" path="slf4j-api-1.7.2.jar"/>
+	<classpathentry kind="lib" path="slf4j-simple-1.7.12.jar"/>
+>>>>>>> origin/master
 	<classpathentry kind="output" path="bin"/>
 </classpath>
