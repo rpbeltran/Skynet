@@ -1,6 +1,8 @@
 package skynet;
 
 import java.awt.image.BufferedImage;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Algor {
 	
@@ -23,6 +25,23 @@ public class Algor {
 			}
 		}
 		return newTest;
+	}
+	
+	public static int average(BufferedImage image){
+		List<Integer> averages = new ArrayList<Integer>();
+		ExistingImage test = new ExistingImage(image);
+		NewImage newTest = new NewImage(test.getWidth(),test.getHeight());
+		for(int row = 0; row < test.getHeight();row ++){
+				for (int col = 0; col < test.getWidth(); col++){
+					int[]rgb = test.getRGBat(col, row);
+					averages.add((rgb[0]+rgb[1]+rgb[2])/3);
+			}
+		}
+		int av = 0;
+		for (int a:averages){
+			av+=a;
+		} av/= averages.size();
+		return av;
 	}
 
 }
